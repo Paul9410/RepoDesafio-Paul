@@ -7,6 +7,7 @@
     <title>Design At Home</title>
     <link rel="icon" href="Imagenes/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>     
 
 
@@ -43,19 +44,19 @@
         <nav class= "MainNav">
 
         <ul>
-            <li>
+            <li class="scale">
                 <a href="index.html">Inicio</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="productos/Productos.html">Productos</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="soy/soy.html">¿Quien soy?</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="contacto/Contacto.html">Contacto</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="preguntas/preguntas.html">Preguntas frecuentes</a>
             </li>
         </ul>
@@ -98,7 +99,7 @@
 </nav>
 
     <!-------------------MAIN---------------------->
-<main class="productos">
+<main class="wow bounceInRight productos">
 
 <div class="contenedor-productos">
     <div>
@@ -106,33 +107,33 @@
     </div>
     <div class="contenedor1">
     <figure>
-        <img src="../Imagenes/producto2.jpg" alt="producto 2">
+        <img src="../Imagenes/producto2.jpg" class="scale" alt="producto 2">
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
 
     <figure>
-        <img src="../Imagenes/producto6.jpg" alt="producto 6">
+        <img src="../Imagenes/producto6.jpg" class="scale" alt="producto 6">
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
 
     <figure>
-        <img src="../Imagenes/producto9.jpg" alt="producto 9">
+        <img src="../Imagenes/producto9.jpg" class="scale" alt="producto 9">
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
     </div>
     <div class="contenedor2">
     <figure>
-        <img src="../Imagenes/producto7.jpg" alt="producto 7">
+        <img src="../Imagenes/producto7.jpg" class="scale" alt="producto 7">
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
 
     <figure>
-        <img src="../Imagenes/producto4.jpg" alt="producto 4">
+        <img src="../Imagenes/producto4.jpg" class="scale" alt="producto 4">
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
 
     <figure>
-        <img src="../Imagenes/producto1.jpg" alt="producto 1">
+        <img src="../Imagenes/producto1.jpg" class="scale" alt="producto 1">
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
     </div>
@@ -140,7 +141,7 @@
 
 
 <div class="divboton">
-    <a href="productos/Productos.html"><button>VER TODOS LOS PRODUCTOS</button></a>
+    <a href="productos/Productos.html"><button class="boton">VER TODOS LOS PRODUCTOS</button></a>
 </button>
 </div>
 
@@ -228,5 +229,11 @@
         </div>
 </footer>
 </div>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
 </body>
 </html>

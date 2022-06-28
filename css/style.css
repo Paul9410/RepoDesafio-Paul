@@ -247,6 +247,7 @@ header{
     }
 
 .divboton{
+        width: 250px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
@@ -257,9 +258,12 @@ header{
         width:250px;
         height: 50px;
         font-family:'Roboto', sans-serif;
-        background-color: rgb(43, 31, 31);
-        color:white;   
+        font-weight: 600;
+        background-color: transparent;
+        color:rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);   
         border-radius: 8px;
+        cursor: pointer;
         
     }
 
@@ -1035,3 +1039,28 @@ header{
     }
 }
 
+
+/*======================== ANIMACIONES ====================*/
+
+/*Animación en NAV y Productos*/
+
+.scale:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*Animación en boton*/
+
+.divboton{
+    
+    transition:box-shadow  ease-in-out;
+    border-radius: 8px;
+}
+.divboton:hover{
+    box-shadow:0 0 40px 40px rgb(0, 0, 0) inset;
+}
+
+.boton:hover{
+    color: white;
+}
