@@ -1048,7 +1048,6 @@ header{
 
 .scale:hover{
     transform:scale(1.2);
-    transform-origin: center center;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -1057,7 +1056,7 @@ header{
 
 .divboton{
     
-    transition:box-shadow  ease-in-out;
+    transition:box-shadow ease-in-out;
     border-radius: 8px;
 }
 .divboton:hover{
