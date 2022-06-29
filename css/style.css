@@ -194,8 +194,14 @@ header{
            
         }
         
-        .filtros div ul{
+        .filtros ul{
             list-style: none;
+        }
+
+        .filtros a{
+            text-decoration: none;
+            color: #676565;
+            font-weight: 500;
         }
 
 
