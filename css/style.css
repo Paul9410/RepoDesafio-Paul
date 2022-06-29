@@ -202,6 +202,7 @@ header{
 /*-----------------MAIN----------------------------*/ 
 .contenedor-productos{
     width: 100%;
+    padding-right: 40px;
     }
 
 .ProductosDestacados{
@@ -212,6 +213,7 @@ header{
     justify-content: center;
     text-align: center;
     color: rgb(43, 31, 31);
+    padding-bottom: 4px;
 
 }
 
@@ -1046,6 +1048,7 @@ header{
 
 .scale:hover{
     transform:scale(1.2);
+    transform-origin: center center;
     cursor: pointer;
     transition: 0.3s;
 }
