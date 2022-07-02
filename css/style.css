@@ -20,71 +20,9 @@ body{
     background-image: url(../imagenes/general.jpg);
     background-repeat:repeat;
     background-attachment: fixed;
-    overflow-x: hidden;
+    
 } 
 
-.grid{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-    "mobile"
-    "header"
-    "filtros" 
-    "productos"
-    "info"
-    "pie";
-}
-
-.nav_responsive{
-    grid-area: mobile;
-}
-
-.MainNav{
-    grid-area: MainNav;
-}
-
-.header{
-    grid-area: header;
-}
-
-.filtros{
-    grid-area: filtros;
-}
-
-.productos{
-    grid-area: productos;
-}
-
-.hero{
-    grid-area: hero;
-}
-
-.texto{
-    grid-area: texto;
-}
-
-.soy{
-    grid-area: soy;
-}
-
-.info{
-    grid-area: info;
-}
-
-.pie{
-    grid-area: pie;
-}
-
-.contacto{
-    grid-area: contacto;
-}
-
-.preguntas{
-    grid-area: preguntas;
-}
 
 
 
@@ -204,17 +142,40 @@ header{
             font-weight: 500;
         }
 
+/*-----------------CAROUSEL----------------------------*/ 
+
+.ml-carousel{
+    margin-left: 5em;
+}
+
+.mr-carousel{
+    margin-right: 5em;
+}
+
+.carousel-item img{
+    border-radius: 4px;
+}
+
+
+/*-----------------TExt Center----------------------------*/ 
+
+.text-air{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.197);
+    color: rgb(0, 0, 0);
+    height: 100px;
+    margin-top: 10px;
+    
+}
 
 /*-----------------MAIN----------------------------*/ 
-.contenedor-productos{
-    width: 100%;
-    padding-right: 40px;
-    }
+
 
 .ProductosDestacados{
     font-size: 1.5em;
     font-family: "roboto";
-    font-style:italic;
     font-weight: 800;
     justify-content: center;
     text-align: center;
@@ -223,35 +184,32 @@ header{
 
 }
 
-.contenedor1{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-evenly;
+.contenedor1,
+.contenedor2{
     font-family: "roboto";
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 10px;
-
+    justify-content: space-evenly;
+    padding: 20px;
 }
-    .contenedor1 img{
-        width: auto;
-        padding: 20px;
-        border-radius: 10em;
-        
+
+    .contenedor1 figcaption,
+    .contenedor2 figcaption{
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: none;
+        margin:10px;
+        padding-bottom:20px;
+        border-style:solid;
+        border-width: 2px;
+        border-color: #f1eaeaf3;
+        font-size: 20px;
     }
 
-.contenedor2{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    font-family: "roboto";
-    text-align: center;
-}
 
+    .contenedor1 img,
     .contenedor2 img{
-        width: auto;
-        padding: 20px;
-        border-radius: 10em;
+        border-radius: 1em;
+        width: 100%;
     }
 
 .divboton{
@@ -262,7 +220,7 @@ header{
         margin-bottom: 50px;
         text-align: center;
     }
-    button{
+    .boton-prod{
         width:250px;
         height: 50px;
         font-family:'Roboto', sans-serif;
@@ -276,81 +234,33 @@ header{
     }
 
 /*-------------------------BANNER-----------------------*/
-
-
-.banner{
-    width: 100%;
+.banner article{
+  
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
 
-        .banner__contenedor1{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-bottom: 15px;
-        }
-            
-            .banner__contenedor1--img{
-                width: 60px;
-                height: 60px;   
-            }
+    .banner img{
+        padding: 10px;
+    }
 
-            .banner__contenedor1--text{
-                width: 50%;
-                font-family: "roboto";
-                font-size: 0.9em;
-                margin-left: 20px;
-                color: rgb(122, 108, 108);
-            }
+@media (max-width:992px){
+    .banner{
+        width: 100%;
+     
+    }
 
-            
-        .banner__contenedor2{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-bottom: 15px;
+    .entrega,
+    .descuento,
+    .tarjeta{
+        width: 90%;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+    }
 
-        }
-
-            .banner__contenedor2--img{
-                width: 60px;
-                height: 60px;
-            }
-
-            .banner__contenedor2--text{
-                width: 50%;
-                font-family: "roboto";
-                font-size: 0.9em;
-                margin-left: 20px;
-                color: rgb(122, 108, 108);
-            }
-
-        
-        .banner__contenedor3{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-            .banner__contenedor3--img{
-                width: 60px;
-                height: 60px;
-            }
-
-            .banner__contenedor3--text{
-                width: 50%;
-                font-family: "roboto";
-                font-size: 0.9em;
-                margin-left: 20px;
-                color: rgb(122, 108, 108);
-            }
-
+}
+  
 /*-----------------------Footer-------------------------*/
 
 .contenedor{
@@ -686,366 +596,6 @@ header{
     font-size: 1em;
     margin-bottom: 50px;
     }
-
-
-
-/*================== MEDIAS ===================*/
-
-@media (min-width: 420px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "mobile mobile"
-        "header header"
-        "filtros filtros"
-        "productos productos"
-        "info info"
-        "pie pie";
-    }
-
-    .nav_responsive{
-        display: none;
-    }
-
-    .MainNav{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .header a img {
-       width: 100%;
-        margin: auto;
-    }
-
-    .contenedor1,
-    .contenedor2{
-        display: flex;
-        flex-direction: row;
-    }
-        .contenedor1 img,
-        .contenedor2 img{
-            width: 100%;
-        }
-
-    .info{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-        .contenedor__bloque1,
-        .contenedor__bloque2,
-        .contenedor__bloque3{
-            padding: 20px;
-        }
-
-}
-
-
-@media (min-width: 873px){
-    .grid{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "MainNav MainNav MainNav"
-        "header header header"
-        "filtros productos productos"
-        "hotsale info info"
-        "pie pie pie";
-    }
-
-    .nav_responsive{
-        display: none;
-    }
-
-    .MainNav{
-        display: flex;
-    }
-    
-    .header{
-        width: 100%;
-    }
-
-    .contenedor1,
-    .contenedor2{
-        display: flex;
-        flex-direction: row;
-    }
-        .contenedor1 img,
-        .contenedor2 img{
-            width: 100%;
-        }
-
-    .info{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contenedor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-}
-
-
-
-
-/*======================= PRODUCTOS =========================*/
-
-.grid2{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    width: 99%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-    "mobile"
-    "header"
-    "filtros"
-    "productos"
-    "info"
-    "pie";
-}
-
-
-@media (min-width: 420px){
-.grid2{
-    grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "mobile mobile"
-        "header header"
-        "filtros filtros"
-        "productos productos"
-        "info info"
-        "pie pie"
-    }
-
-.nav_responsive{
-    display: flex;
-    flex-direction: row;
-}
-
-.MainNav{
-    display: none;
-}
-
-}
-
-.block__contenedor1,
-.block__contenedor2,
-.block__contenedor3,
-.block__contenedor4{
-    display: flex;
-    flex-direction: row;
-}
-    .block__contenedor1 figure img,
-    .block__contenedor2 figure img,
-    .block__contenedor3 figure img,
-    .block__contenedor4 figure img{
-        width: 100%;
-    }
-
-
-@media (min-width: 873px){
-    .grid2{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-        "MainNav MainNav MainNav"
-        "header header header"
-        "productos productos filtros"
-        "info info info"
-        "pie pie pie";
-    }
-
-
-    .MainNav{
-        display: flex;
-    }
-    
-    .header{
-        width: 100%;
-    }
-
-    .contenedor1,
-    .contenedor2{
-        display: flex;
-        flex-direction: row;
-    }
-        .contenedor1 img,
-        .contenedor2 img{
-            width: 100%;
-        }
-
-    .info{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contenedor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-}
-
-
-/*=============== QUIEN SOY ====================*/
-
-.grid3{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "mobile"
-    "header"
-    "hero"
-    "texto"
-    "soy"
-    "info"
-    "pie";
-    }
-
-    @media (min-width: 873px){
-        
-        .grid3{
-            grid-template-columns: 70% 30%;
-                grid-template-rows: repeat(6, 1fr);
-                grid-template-areas: 
-                "MainNav MainNav"
-                "header header"
-                "hero hero"
-                "texto soy"
-                "info info"
-                "pie pie";
-            }
-        
-    .MainNav{
-        display: flex;
-    }
-
-    .mobile{
-        display: none;
-    }
-    
-    .header{
-        width: 100%;
-    }
-
-        .texto{
-            width: 100%;
-        }
-        
-            .box__texto--parrafo{
-                padding: 20px;
-            }
-        .soy{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            grid-column-start: 2;
-            grid-column-end: 2;
-            grid-row-start: 4;
-            grid-row-end: 5;
-            justify-content: center;   
-        }
-
-        .soy img{
-           
-            width: 20vw;
-            margin: 30px;
-        }
-        }
-
-    /*=============== CONTACTO ====================*/
-
-    .grid4{
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "mobile"
-        "header"
-        "contacto"
-        "info"
-        "pie";
-    }
-
-    @media (min-width: 873px){
-        
-        .grid4{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-                grid-template-areas: 
-               "MainNav MainNav"
-               "header header"
-               "contacto contacto"
-               "info info"
-               "pie pie"
-            }
-
-            .mobile{
-                display: none;
-            }
-
-            .MainNav{
-                display: flex;
-                flex-direction: row;
-                text-align: center;
-            }
-
-            .contacto{
-                display: flex;
-                flex-direction: row;
-            }
-
-            .parrafo{
-                text-align: start;
-            }
-        }
-
-    
-/*========== PREGUNTAS FRECUENTES ================*/
-
-.grid-preguntas{
-    display: grid;
-    width: 100nw;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "mobile"
-    "header"
-    "preguntas"
-    "info"
-    "pie";
-}
-
-@media (max-width: 280px){
-    .nav_responsive{
-        display: none;
-    }
-}
-
-@media (min-width: 487px){
-    .MainNav{
-        display: flex;
-        flex-direction: row;
-    }
-}
 
 
 /*======================== ANIMACIONES ====================*/
