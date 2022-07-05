@@ -1,246 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design At Home</title>
-    <link rel="icon" href="Imagenes/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Mi CSS -->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="icon" href="Imagenes/favicon.ico">
+
+    <title>Design At Home</title>
 </head>     
 
 
 <body>
 
-    <div class="grid">
-
-
-
-        <!-----------------Edition NAV MOBILE---------------------->    
-
-        <nav class="nav_responsive">
-
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="/Productos/Productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="/Contacto/Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        
-        </nav>
-
     <!-----------------Edition NAV DESKTOP---------------------->
-<Header class="header">
-        <a href="index.html">
-            <img src="Imagenes/imghead.jpg"  alt="logo de Design At Home by Yazmin">
-        </a>
 
-        <nav class= "MainNav">
+<header>
 
-        <ul>
-            <li class="scale">
-                <a href="index.html">Inicio</a>
-            </li>
-            <li class="scale">
-                <a href="productos/Productos.html">Productos</a>
-            </li>
-            <li class="scale">
-                <a href="soy/soy.html">¿Quien soy?</a>
-            </li>
-            <li class="scale">
-                <a href="contacto/Contacto.html">Contacto</a>
-            </li>
-            <li class="scale">
-                <a href="preguntas/preguntas.html">Preguntas frecuentes</a>
-            </li>
-        </ul>
-    
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="imagenes/imghead.jpg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Paginas/soy.html">Quien soy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Paginas/Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Paginas/preguntas.html">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-</Header>
+ <!-- Inicia carousel -->
 
-
-<nav class="filtros">
-    <div>
-    <h4>FILTROS</h4>
+ <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-width" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/hero.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/frasco.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/frasco2.jpg" class="d-block w-100" alt="...">
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div>
-    <h4>PESO</h4>
-    <p>0.00kg - 0.10kg</p>
+  <section class="my-5 w-100">
+    <div class="text-air">
+        <h2>#Airbeauty</h2>
     </div>
-    <div>    
-    <h4>PRECIO</h4>
-    <p>$ 800.00 - $2000.00</p>
-    </div>
-
-    <div>
-    <h4>Elegí tu esencia favorita</h4>
-    <ul>
-        <li><a href="productos/Productos.html">Todas</a></li>
-        <li><a href="productos/Productos.html">Red Berries (2)</a></li>
-        <li><a href="productos/Productos.html">Grape Fruit (2)</a></li>
-        <li><a href="productos/Productos.html">Nala White (3)</a></li>
-    </ul>
-    </div>
-
-</nav>
+  </section>
 
     <!-------------------MAIN---------------------->
-<main class="wow bounceInRight productos">
+<main>
+<section class="wow bounceInRight productos py-3">
 
-<div class="contenedor-productos">
-    <div>
-    <p class="ProductosDestacados">Productos Destacados</p>
+    <div class="wrap">
+        <h1 class="ProductosDestacados container-fluid">Productos Destacados</h1>
     </div>
-    <div class="contenedor1">
-    <figure>
+
+<div class="container-fluid">
+    <div class="row w-100 contenedor1">
+    <figure class="col-sm-12 col-md-5 col-lg-4">
         <a href="productos/Productos.html">
-        <img src="Imagenes/producto2.jpg" class="scale" alt="producto 2">
+        <img src="Imagenes/producto2.jpg" class=" scale img-productos" alt="producto 2">
         </a>
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
 
-    <figure>
+    <figure class="col-sm-12 col-md-5 col-lg-4">
         <a href="productos/Productos.html">
-        <img src="Imagenes/producto6.jpg" class="scale" alt="producto 6">
+        <img src="Imagenes/producto6.jpg" class="scale img-productos" alt="producto 6">
         </a>
-        <figcaption><b>Vela Lorem</b></figcaption>
-    </figure>
-
-    <figure>
-        <a href="productos/Productos.html">
-        <img src="Imagenes/producto9.jpg" class="scale" alt="producto 9">
-        </a>
-        <figcaption><b>Vela Lorem</b></figcaption>
+        <figcaption class="justify-items-center"><b>Vela Lorem</b></figcaption>
     </figure>
     </div>
 
-    <div class="contenedor2">
-    <figure>
+    <div class="row w-100 contenedor1">
+    <figure class="col-sm-12 col-md-5 col-lg-4">
         <a href="productos/Productos.html">
-        <img src="Imagenes/producto7.jpg" class="scale" alt="producto 7">
+        <img src="Imagenes/producto9.jpg" class="scale img-productos" alt="producto 9">
         </a>
         <figcaption><b>Vela Lorem</b></figcaption>
-    </figure>
+    </figure>   
 
-    <figure>
+    <figure class="col-sm-12 col-md-5 col-lg-4">
         <a href="productos/Productos.html">
-        <img src="Imagenes/producto4.jpg" class="scale" alt="producto 4">
-        </a>
-        <figcaption><b>Vela Lorem</b></figcaption>
-    </figure>
-
-    <figure>
-        <a href="productos/Productos.html">
-        <img src="Imagenes/producto1.jpg" class="scale" alt="producto 1">
+        <img src="Imagenes/producto7.jpg" class="scale img-productos product" alt="producto 7">
         </a>
         <figcaption><b>Vela Lorem</b></figcaption>
     </figure>
     </div>
-</div>
-
 
 <div class="divboton">
-    <a href="productos/Productos.html"><button class="boton">VER TODOS LOS PRODUCTOS</button></a>
+    <a href="paginas/Productos.html"><button class="boton boton-prod">VER TODOS LOS PRODUCTOS</button></a>
 </button>
 </div>
-
+</section>
 
 </main>
 
 <!---------------------------------------BANNER------------------------------>
 
-<div class="banner info">
-    <div class="banner__contenedor1">
-        
-                <img src="Imagenes/envio.jpg" alt="Entrega" class="banner__contenedor1--img">
+<div class="container-fluid">
+    <section class="row">
+    
+        <div class="banner__contenedor1">    
+                <img src="Imagenes/envio.svg" alt="Entrega" class="banner__contenedor1--img">
 
             <div class="banner__contenedor1--text">
-            <h3>ENTREGA EN TODO CABA</h3>
+            <h3>Entrega en todo CABA</h3>
             <p>Entrega gratis para compras superiores a $3.000</p>
             </div>
         </div>
     
         <div class="banner__contenedor2">
                 
-                <img src="Imagenes/descuento.jpg" alt="Descuento" class="banner__contenedor2--img">
+                <img src="Imagenes/descuento.svg" alt="Descuento" class="banner__contenedor2--img">
             
             <div class="banner__contenedor2--text">
-                <h3>15% DE DESCUENTO</h3>
+                <h3>15% De descuento</h3>
                 <p>Tenes hasta 3 cuotas sin interes con todas las tarjetas de crédito.</p>
             </div>
         </div>
         <div class="banner__contenedor3">
 
-            <img src="Imagenes/tarjeta.jpg" alt="Cuotas sin interes" class="banner__contenedor3--img">
+            <img src="Imagenes/tarjeta.svg" alt="Cuotas sin interes" class="banner__contenedor3--img">
             <div class="banner__contenedor3--text">
-                <h3>3 CUOTAS SIN INTERES</h3>
+                <h3>3 cuotas sin interes</h3>
             <p>Con todas las tarjetas de crédito</p>
             </div>
         </div>
-
+    </section>
 </div>
-
     <!-------------------------------FOOTER-------------------------------------->
 
-    
-    <footer class="pie">
-        <div class="contenedor">
-            <div class="contenedor__bloque1">
-                <div class="contenedor__bloque1--texto">
-                        <h3>VISITANOS EN NUESTRO SHOWROOM</h3></div>
-                <div class="contenedor__bloque1--texto">
-                        <p>Avenida Rivadavia 4434 Almagro, CABA</p></div>
-                <div class="contenedor__bloque1--texto">
-                    <p>Telf: 11 3333 4444</p></div>
-            </div>
+    <footer class="text-white py-4 bg-dark">
+            <div class="row container-fluid w-100 justify-content-center">
 
-            <div class="contenedor__bloque2">
-                <div class="contenedor__bloque2--texto"><h3>NUESTRAS REDES</h3></div>
-                    <div class="contenedor__bloque2--blockImg">
+                <section class="col-sm-12 col-md-5 col-lg-5">
+                <ul>
+                    <li>
+                        <img src="Imagenes/mail.svg" alt="mail"> designathome@outlook.com
+                    </li>
+                    <li>
+                        <img src="Imagenes/direccion.svg" alt="direccion"> Av. Rivadavia 4434 Almagro, CABA.
+                    </li>
+                    <li>
+                        <img src="Imagenes/telefono.svg" alt="teléfono"> Telf: 11 3333 4444
+                    </li>
+                    <li>
+                    <img src="Imagenes/horario.svg" alt="horario"> Lun - Vier 10/20hs - Sab 10/15hs
+                    </li>
+                </ul>
+            </section>
+                
+                <section class="col-sm-12 col-md-5 col-lg-4">
+                <ul> 
+                    <li>
                         <a href="https://www.instagram.com" target="_blank">
-                        <img src="Imagenes/IG.jpg"  class="contenedor__bloque2--blockImg-logo" alt="Link a Instagram"></a>    
-                    </div>
-
-                    <div class="contenedor__bloque2--blockImg">
+                        <img src="Imagenes/ig.svg" alt="">
+                        @designathome.aromas
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://www.facebook.com" target="_blank">
-                        <img src="Imagenes/fb.jpg" class="contenedor__bloque2--blockImg-logo" alt="link a facebook"></a>
-                    </div>
+                        <img src="Imagenes/fb.svg" alt="">
+                        designathome.aromas
+                    </li>
+                    </a>
+                    <li>
+                        <a href="https://www.whatsapp.com" target="_blank">
+                        <img src="Imagenes/whatsapp.svg" alt="">
+                        11 2736 4483
+                    </li>
+                    </a>
+                    </a>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                        <img src="Imagenes/youtube.svg" alt="">
+                        design at home
+                    </li>
+                    </a>
+                </ul>
+            </section>
 
-                    <div class="contenedor__bloque2--blockImg">
-                        <a href="https://whatsapp.com" target="_blank">
-                        <img src="Imagenes/whatsapp.jpg" class="contenedor__bloque2--blockImg-logo" alt="link a whatsapp"></a>
-
-                    </div>
-            </div>
-
-            <div class="contenedor__bloque3">
-                <div><h3>MEDIOS DE PAGO</h3></div>
-                <div>
-                    <img src="Imagenes/visa.jpg" class="contenedor__bloque3--tajetas" alt="visa">
-                    <img src="Imagenes/american.jpg" class="contenedor__bloque3--tajetas" alt="american">
-                    <img src="Imagenes/banelco.jpg" class="contenedor__bloque3--tajetas" alt="balenco">
-                </div>
-                <div>
-                    <img src="Imagenes/mercadopago.jpg" class="contenedor__bloque3--tajetas" alt="mercado pago">
-                    <img src="Imagenes/efectivo.jpg" class="contenedor__bloque3--tajetas" alt="efectivo">
-                </div>
-            </div>
+            <section class="col-sm-12 col-md-4 col-lg-3">
+                <ul>
+                    <li><a href="paginas/Contacto.html">Contacto</a></li>
+                    <li><a href="Paginas/preguntas.html">Venta mayorista</a></li>
+                    <li><a href="Paginas/preguntas.html">Regalos corporativos</a></li>
+                    <li><a href="Paginas/preguntas.html">Términos y condiciones</a></li>
+                    <li><a href="Paginas/preguntas.html">Políticas de privacidad</a></li>
+                </ul>
+            </section>
         </div>
-</footer>
-</div>
+    </footer>
 
 <script src="js/wow.min.js"></script>
 <script>
 new WOW().init();
 </script>
 
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
