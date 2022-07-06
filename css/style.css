@@ -316,10 +316,14 @@ footer a{
     margin: auto;
 }
 
-    section ul{
+    .info-contacto ul{
 
         list-style-type: none;
     }   
+            .info-contacto a{
+                text-decoration: none;
+                color:rgb(77, 77, 77);
+            }
 
             section ul li img{
                 width: 30px;
