@@ -383,7 +383,6 @@ footer a{
 /*--------------------PREGUNTAS FRECUENTES---------------*/
 
 #Container{
-        width: 80%;
         height: 80%;
         line-height: 1.4em;
         padding: auto;
@@ -401,7 +400,7 @@ footer a{
 
         .container1__preguntas--respuestas{
             text-align: center;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family:'Play', sans-serif;
             font-size: 1em;
             margin-bottom: 50px;
 }
