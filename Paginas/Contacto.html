@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design At Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Mi CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
     <link rel="icon" href="../Imagenes/favicon.ico">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+
+    <title>Design At Home</title>
+</head>     
+
+
 <body>
 
-<div class="grid4">
-
-          <!-----------------Edition NAV MOBILE---------------------->    
-
-          <nav class="nav_responsive">
-
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="/Productos/Productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        
-        </nav>
-
     <!-----------------Edition NAV DESKTOP---------------------->
-<Header class="header">
-        <a href="../index.html">
-            <img src="/Imagenes/imghead.jpg" alt="logo de Design At Home by Yazmin">
-        </a>
 
+<header>
 
-        <nav class= "MainNav">
+    <nav class="navbar navbar-expand-lg navbar-light botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../Imagenes/imghead.jpg" alt="Imagen cabecera">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas/Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas/soy.html">Quien soy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas/preguntas.html">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="/Productos/Productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="/soy/soy.html">¿Quien soy?</a>
-            </li>
-            <li>
-                <a href="Contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="/preguntas/preguntas.html">Preguntas frecuentes</a>
-            </li>
-        </ul>
-    
-    </nav>
-
-</Header>
+<!-----------------End Edition NAV DESKTOP---------------------->
 
     <!-------------------MAIN---------------------->
-<main class="contacto">
-    <div class="parrafo">
-            <p>Por dudas o coordinación para retiro de pedidos podes escribirme por whatsapp, instagram o mail.</p>
-       
 
-            <section>
+<main class="container-fluid">
+    <div class="row">
+        <div class="contenedor-info col-sm-12 col-md-12 col-lg-6">
+                <p>Por dudas o coordinación para retiro de pedidos podes escribirme por whatsapp, instagram o mail.</p>
+
+            <section class="info-contacto">
                 <ul>
                     <li><img src="../Imagenes/telefono.jpg" alt="telefono">11 3333 4444</li>
                     <li><img src="../Imagenes/ig2.svg" alt="instagram">@designathome.aromas</li>
@@ -75,124 +74,161 @@
                     <li><img src="../Imagenes/direccion.jpg" alt="direccion">Av. Rivadavia 4434, Almagro CABA</li>
                 </ul>
             </section>
+
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.578744664742!2d-58.4282474!3d-34.6148123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5cb6fb26a1%3A0xdde000cfe02ebe0f!2sAv.%20Rivadavia%204434%2C%20C1205AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1657066902269!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        
         </div>
     
-    <div class="contacto__form">
-            <form action="envio.php">
-            <div class="contact__form--orden">
-                <label for="name" class="contacto__form--label">NOMBRE COMPLETO</label>
+    <div class="col-sm-12 col-md-12 col-lg-6">
+            <form action="" class="contact__form--orden">
+            <div >
+                <label for="name" class="contacto__form--label">Nombre y apellido</label>
             </div>
             <div>
-            <input type="text" name="name" id="name" placeholder="Juan" class="contacto__form--orden-input">
+            <input type="text" name="name" id="name" placeholder="Juan Perez" class="contacto__form--orden-input">
             </div>
-            <div class="contact__form--orden">
-                <label for="mail" class="contacto__form--label">MAIL</label>
+            <div>
+                <label for="mail" class="contacto__form--label">Mail</label>
             </div>
             <div>
             <input type="text" name="mail" id="mail" placeholder="design@athome.com" class="contacto__form--orden-input">
             </div>
-            <div class="contact__form--orden">
-                <label for="telefono" class="contacto__form--label">TELEFONO (opcional)</label>
+            <div>
+                <label for="telefono" class="contacto__form--label">Teléfono (opcional)</label>
             </div>
             <div>
             <input type="text" name="telefono" id="telefono" placeholder="11 222 4444" class="contacto__form--orden-input">
             </div>
 
-            <div class="contact__form--orden">
+            <div>
                 <label id="mensaje">Dejanos tus comentarios</label>
             </div>
             <div>
-                <textarea name="" id="mensaje" cols="66" rows="10"></textarea>
+                <textarea name="" id="mensaje" cols="66" rows="10" class="contacto__form--orden-input"></textarea>
             </div>
             <div>
-                <input type="submit" value="Enviar" class="input">
-                <input type="reset" value="Cancelar" class="input">
+                <input type="submit" value="Enviar" class="input scale">
+                <input type="reset" value="Cancelar" class="input scale">
             </div>
-
         </form>
     </div>
+
+</div>
 </main>
 
-<!----------------------------BANNER----------------------------->
-<div class="banner info">
-    <div class="banner__contenedor1">
-        
-                <img src="../Imagenes/envio.jpg" alt="Entrega" class="banner__contenedor1--img">
+<!---------------------------------------BANNER------------------------------>
+
+<div class="container-fluid py-5">
+    <section class="row">
+    
+        <div class="banner__contenedor1">    
+                <img src="../Imagenes/envio.svg" alt="Entrega" class="banner__contenedor1--img">
 
             <div class="banner__contenedor1--text">
-            <h3>ENTREGA EN TODO CABA</h3>
+            <h3>Entrega en todo CABA</h3>
             <p>Entrega gratis para compras superiores a $3.000</p>
             </div>
         </div>
     
         <div class="banner__contenedor2">
                 
-                <img src="../Imagenes/descuento.jpg" alt="Descuento" class="banner__contenedor2--img">
+                <img src="../Imagenes/descuento.svg" alt="Descuento" class="banner__contenedor2--img">
             
             <div class="banner__contenedor2--text">
-                <h3>15% DE DESCUENTO</h3>
+                <h3>15% De descuento</h3>
                 <p>Tenes hasta 3 cuotas sin interes con todas las tarjetas de crédito.</p>
             </div>
         </div>
         <div class="banner__contenedor3">
 
-            <img src="../Imagenes/tarjeta.jpg" alt="Cuotas sin interes" class="banner__contenedor3--img">
+            <img src="../Imagenes/tarjeta.svg" alt="Cuotas sin interes" class="banner__contenedor3--img">
             <div class="banner__contenedor3--text">
-                <h3>3 CUOTAS SIN INTERES</h3>
+                <h3>3 cuotas sin interes</h3>
             <p>Con todas las tarjetas de crédito</p>
             </div>
         </div>
-
+    </section>
 </div>
-
-
     <!-------------------------------FOOTER-------------------------------------->
 
-<footer class="pie">
-        <div class="contenedor">
-            <div class="contenedor__bloque1">
-                <div class="contenedor__bloque1--texto">
-                        <h3>VISITANOS EN NUESTRO SHOWROOM</h3></div>
-                <div class="contenedor__bloque1--texto">
-                        <p>Avenida Rivadavia 4434 Almagro, CABA</p></div>
-                <div class="contenedor__bloque1--texto">
-                    <p>Telf: 11 3333 4444</p></div>
-            </div>
+    <footer class="text-white py-4 bg-dark">
+            <div class="row container-fluid w-100 justify-content-center">
 
-            <div class="contenedor__bloque2">
-                <div class="contenedor__bloque2--texto"><h3>NUESTRAS REDES</h3></div>
-                    <div class="contenedor__bloque2--blockImg">
+                <section class="col-sm-12 col-md-5 col-lg-5">
+                <ul>
+                    <li>
+                        <img src="../Imagenes/mail.svg" alt="mail"> designathome@outlook.com
+                    </li>
+                    <li>
+                        <img src="../Imagenes/direccion.svg" alt="direccion"> Av. Rivadavia 4434 Almagro, CABA.
+                    </li>
+                    <li>
+                        <img src="../Imagenes/telefono.svg" alt="teléfono"> Telf: 11 3333 4444
+                    </li>
+                    <li>
+                    <img src="../Imagenes/horario.svg" alt="horario"> Lun - Vier 10/20hs - Sab 10/15hs
+                    </li>
+                </ul>
+            </section>
+                
+                <section class="col-sm-12 col-md-5 col-lg-4">
+                <ul> 
+                    <li>
                         <a href="https://www.instagram.com" target="_blank">
-                        <img src="../imagenes/IG.jpg"  class="contenedor__bloque2--blockImg-logo"></a>    
-                    </div>
-
-                    <div class="contenedor__bloque2--blockImg">
+                        <img src="../Imagenes/ig.svg" alt="Logo instagram">
+                        @designathome.aromas
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://www.facebook.com" target="_blank">
-                        <img src="../imagenes/fb.jpg" class="contenedor__bloque2--blockImg-logo" ></a>
-                    </div>
+                        <img src="../Imagenes/fb.svg" alt="Logo facebook">
+                        designathome.aromas
+                    </li>
+                    </a>
+                    <li>
+                        <a href="https://www.whatsapp.com" target="_blank">
+                        <img src="../Imagenes/whatsapp.svg" alt="Logo whatsapp">
+                        11 2736 4483
+                    </li>
+                    </a>
+                    </a>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                        <img src="../Imagenes/youtube.svg" alt="Logo youtube">
+                        design at home
+                    </li>
+                    </a>
+                </ul>
+            </section>
 
-                    <div class="contenedor__bloque2--blockImg">
-                        <a href="https://whatsapp.com" target="_blank">
-                        <img src="../imagenes/whatsapp.jpg" class="contenedor__bloque2--blockImg-logo" ></a>
-
-                    </div>
-            </div>
-
-            <div class="contenedor__bloque3">
-                <div><h3>MEDIOS DE PAGO</h3></div>
-                <div>
-                    <img src="../imagenes/visa.jpg" class="contenedor__bloque3--tajetas" alt="visa">
-                    <img src="../imagenes/american.jpg" class="contenedor__bloque3--tajetas" alt="american">
-                    <img src="../imagenes/banelco.jpg" class="contenedor__bloque3--tajetas" alt="balenco">
-                </div>
-                <div>
-                    <img src="../imagenes/mercado pago.jpg" class="contenedor__bloque3--tajetas" alt="mercado-pago">
-                    <img src="../Imagenes/efectivo.jpg" class="contenedor__bloque3--tajetas" alt="efectivo">
-                </div>
-            </div>
+            <section class="col-sm-12 col-md-4 col-lg-3">
+                <ul>
+                    <li><a href="../Paginas/Contacto.html">Contacto</a></li>
+                    <li><a href="../Paginas/preguntas.html">Venta mayorista</a></li>
+                    <li><a href="../Paginas/preguntas.html">Regalos corporativos</a></li>
+                    <li><a href="../Paginas/preguntas.html">Términos y condiciones</a></li>
+                    <li><a href="../Paginas/preguntas.html">Políticas de privacidad</a></li>
+                </ul>
+            </section>
         </div>
     </footer>
 
-</div>
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
