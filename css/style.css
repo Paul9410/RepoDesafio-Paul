@@ -303,31 +303,22 @@ footer a{
 
 /*-------------------------CONTACTO-------------------*/
 
-.contacto{
-    width: auto;
-    padding-left: 10px;
+.contenedor-info{
+    font-family:  'Play', sans-serif;
+    font-size: 1.1em; 
+    color: rgb(77, 77, 77); 
+    border-right: solid;
+    border-width: 1px;
+    border-color: #c4c7c1;
 }
 
-.parrafo{
-    width: 70%;
-    text-align: center;
-    box-sizing:border-box;
-    display: flex;
-    flex-direction: column;
-    font-family: "roboto";
-    font-size: 1.1em; 
-    color: rgb(77, 77, 77);  
-    padding-bottom: 40px;
+.info-contacto{
     margin: auto;
 }
 
     section ul{
-        font-family: "roboto";
-        font-size: 1.1em;
-        color: rgb(77, 77, 77);
+
         list-style-type: none;
-        padding-top: 20px;
-        padding-bottom: 40px;
     }   
 
             section ul li img{
@@ -336,14 +327,15 @@ footer a{
                 padding-right: 3px;
             }
 
-    .contacto__form{
-        width: auto;
-        padding-bottom: 40px;
-        margin-right: 10px;
+    .map{
+        border: solid;
+        border-width: 1px;
+        border-color: #c4c7c1;
+
     }
 
             .contact__form--orden{
-                font-family: "roboto";
+                font-family: 'Play', sans-serif;
                 margin-bottom: 8px;
                 color: rgb(77, 77, 77);
             }
@@ -357,13 +349,32 @@ footer a{
             padding: 10px;
             margin: 10px;
             border: 1px solid;
-            border-radius: 10px;
-            font-family: "roboto";
-            font-weight: 700;
+            border-radius: 5px;
+            font-family: 'Play', sans-serif;
+            font-weight: 500;
             color: rgb(255, 255, 255);
             background-color: #000;
         }
 
+@media (max-width:992px){
+
+    .info-contacto{
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #c4c7c1;
+    }
+
+    .contact__form--orden{
+       margin-top: 40px;
+       border-top: solid;
+        border-width: 1px;
+        border-color: #c4c7c1;
+    }
+
+    .contacto__form--orden-input{
+       width: 100%;
+    }
+}        
 
 /*--------------------PREGUNTAS FRECUENTES---------------*/
 
