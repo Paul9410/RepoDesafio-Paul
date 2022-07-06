@@ -383,8 +383,6 @@ footer a{
 /*--------------------PREGUNTAS FRECUENTES---------------*/
 
 #Container{
-        width: 80%;
-        height: 80%;
         line-height: 1.4em;
         padding: auto;
         border: none;
@@ -393,7 +391,7 @@ footer a{
 
 .container1__preguntas{
     text-align: center;
-    font-family: "roboto";
+    font-family: 'Play', sans-serif;
     font-size: 1.5em;
     line-height: 2em;
     color: rgb(83, 78, 78) ;
@@ -401,26 +399,13 @@ footer a{
 
         .container1__preguntas--respuestas{
             text-align: center;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: "roboto";
             font-size: 1em;
-            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: #c4c7c1;
 }
-
-.container2__preguntas{
-    text-align: center;
-    font-family: "roboto";
-    font-size: 1.5em;
-    line-height: 2em;
-    color: rgb(83, 78, 78) ;
-}
-        
-.container2__preguntas--respuestas{
-    width: 100%;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1em;
-    margin-bottom: 50px;
-    }
 
 
 /*======================== ANIMACIONES ====================*/
