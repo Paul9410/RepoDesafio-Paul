@@ -1,0 +1,61 @@
+.banner{
+    .envio{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+
+        .envio-img{
+                width: 60px;
+                height: 60px;
+        }
+        .envio-text{
+                    width: 50%;
+                    font-family: $fontsecundaria;
+                    font-size: $fontsize-second;
+                    margin-left: 20px;
+                    color: $fontcolor-secundario;
+
+        }
+    }
+
+    .descuento{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+
+        .descuento-img{
+                width: 60px;
+                height: 60px;
+        }
+        .descuento-text{
+                    width: 50%;
+                    font-family: $fontsecundaria;
+                    font-size: $fontsize-second;
+                    margin-left: 20px;
+                    color: $fontcolor-secundario;
+
+        }
+    }
+
+    .tarjeta{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+
+        .tarjeta-img{
+                width: 60px;
+                height: 60px;
+        }
+        .tarjeta-text{
+                    width: 50%;
+                    font-family: $fontsecundaria;
+                    font-size: $fontsize-second;
+                    margin-left: 20px;
+                    color: $fontcolor-secundario;
+
+        }
+    }
+}   

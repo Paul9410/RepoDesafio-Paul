@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+header .botonera {
+  font-weight: 800;
+}
+header .botonera img {
+  width: 100%;
+}
+header .botonera .nav-link {
+  display: inline-block;
+  position: relative;
+  color: rgb(104, 104, 104);
+}
+header .botonera .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(125, 137, 37);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+header .botonera .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-air {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(195, 191, 85);
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  height: 100px;
+}
+
+main .ProductosDestacados {
+  font-size: 1.5em;
+  font-weight: 800;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+}
+main .contenido .contenedor1 {
+  justify-content: space-evenly;
+  padding: 20px;
+}
+main .contenido .contenedor1 .img-productos {
+  width: 100%;
+  border-radius: 1em;
+  border: solid rgb(195, 191, 85);
+  border-width: 1px;
+}
+main .contenido .contenedor1 .img-productos:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contenido .contenedor1 figcaption {
+  height: 30px;
+  text-align: center;
+  line-height: none;
+  margin: 10px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(241, 234, 234, 0.9529411765);
+  font-size: 0.9em;
+}
+main .contenido section .divboton {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  transition: box-shadow ease-in-out;
+  border-radius: 8px;
+}
+main .contenido section .divboton:hover {
+  box-shadow: 0 0 40px 40px rgb(0, 0, 0) inset;
+}
+main .contenido section .divboton .boton:hover {
+  color: rgb(255, 255, 255);
+}
+main .contenido section .divboton .boton-prod {
+  width: 250px;
+  height: 50px;
+  font-weight: 600;
+  background-color: transparent;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.banner .envio {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.banner .envio .envio-img {
+  width: 60px;
+  height: 60px;
+}
+.banner .envio .envio-text {
+  width: 50%;
+  font-family: "roboto";
+  font-size: 0.9em;
+  margin-left: 20px;
+  color: rgb(104, 104, 104);
+}
+.banner .descuento {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.banner .descuento .descuento-img {
+  width: 60px;
+  height: 60px;
+}
+.banner .descuento .descuento-text {
+  width: 50%;
+  font-family: "roboto";
+  font-size: 0.9em;
+  margin-left: 20px;
+  color: rgb(104, 104, 104);
+}
+.banner .tarjeta {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.banner .tarjeta .tarjeta-img {
+  width: 60px;
+  height: 60px;
+}
+.banner .tarjeta .tarjeta-text {
+  width: 50%;
+  font-family: "roboto";
+  font-size: 0.9em;
+  margin-left: 20px;
+  color: rgb(104, 104, 104);
+}
+
+footer img {
+  width: 27px;
+  height: 30px;
+}
+footer section li {
+  color: rgb(255, 255, 255);
+  font-family: "Play", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+footer section a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 991px) {
+  .banner .envio {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
+  .banner .envio .envio-img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .envio .envio-text {
+    width: 50%;
+    font-family: "roboto";
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: rgb(104, 104, 104);
+  }
+  .banner .descuento {
+    width: 50%;
+    display: flex;
+    padding-bottom: 15px;
+  }
+  .banner .descuento .descuento-img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .descuento .descuento-text {
+    width: 50%;
+    font-family: "roboto";
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: rgb(104, 104, 104);
+  }
+  .banner .tarjeta {
+    width: 100%;
+    display: flex;
+    padding-bottom: 15px;
+  }
+  .banner .tarjeta .tarjeta-img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .tarjeta .tarjeta-text {
+    width: auto;
+    font-family: "roboto";
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: rgb(104, 104, 104);
+  }
+}
+@media (max-width: 768px) {
+  .banner .envio {
+    width: 100%;
+    justify-content: start;
+    padding-bottom: 15px;
+  }
+  .banner .envio .envio-img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .envio .envio-text {
+    width: 50%;
+    font-family: "roboto";
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: rgb(104, 104, 104);
+  }
+  .banner .descuento {
+    width: 100%;
+    justify-content: start;
+    padding-bottom: 15px;
+  }
+  .banner .descuento .descuento-img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .descuento .descuento-text {
+    width: 50%;
+    font-family: "roboto";
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: rgb(104, 104, 104);
+  }
+  .banner .tarjeta {
+    width: 100%;
+    justify-content: start;
+    padding-bottom: 15px;
+  }
+  .banner .tarjeta .tarjeta-img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner .tarjeta .tarjeta-text {
+    width: auto;
+    font-family: "roboto";
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: rgb(104, 104, 104);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imagenes/general.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: "Play", sans-serif;
+}
+
+/*# sourceMappingURL=estilo.css.map */
