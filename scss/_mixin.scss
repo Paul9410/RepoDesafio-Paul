@@ -1,0 +1,15 @@
+//Mixin
+@mixin texto($size, $family){
+    font-size: $size;
+    font-family: $family;
+    text-align: center;
+    line-height: none;
+}
+
+figcaption{
+    @include texto(20px, $fontPrincipal)
+}
+
+.banner{
+    @include texto($fontsize-second, $fontsecundaria)
+}

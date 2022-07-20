@@ -1,0 +1,23 @@
+.footer{
+    
+    img{
+        width: 27px;
+        height: 30px;
+    }
+    
+    section{ 
+            li{
+                color: $fontcolor-footer;
+                font-family: $fontPrincipal;
+                list-style: none;
+                text-decoration: none;  
+                font-size: $fontsize-second;
+                font-weight: 400;
+            }
+
+            a{
+                color: $fontcolor-footer;
+                text-decoration: none;
+            }
+    }
+}

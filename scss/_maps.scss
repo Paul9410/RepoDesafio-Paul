@@ -1,0 +1,27 @@
+$colores:(
+    "uno": #2e2b2b, 
+    "dos": #686868,
+    "tres": #fff,
+    "cuatro": #000,
+    "cinco": #542e2e,
+);
+
+.text-air{
+    color: map-get($map: $colores, $key: "cuatro");
+}
+
+.ProductosDestacados{
+    color: map-get($map: $colores, $key: "uno");
+}
+
+.contenedor1, figcaption{
+    color: map-get($map: $colores, $key:"cuatro");
+}
+
+.banner{
+    color: map-get($map: $colores, $key:"dos");
+}
+
+.nav-link{
+    color: map-get($map: $colores, $key: "dos");
+}

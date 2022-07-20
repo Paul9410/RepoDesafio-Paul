@@ -1,0 +1,112 @@
+@media (max-width:991px) {
+
+    .banner{    
+        .envio{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 15px;
+                .envio-img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                .envio-text{
+                            width: 50%;
+                            font-family: $fontsecundaria;
+                            font-size: $fontsize-second;
+                            margin-left: 20px;
+                            color: $fontcolor-secundario;
+                    }
+                }
+    
+        .descuento{
+            width: 50%;
+            display: flex;
+            padding-bottom: 15px;
+                .descuento-img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                .descuento-text{
+                            width: 50%;
+                            font-family: $fontsecundaria;
+                            font-size: $fontsize-second;
+                            margin-left: 20px;
+                            color: $fontcolor-secundario;
+                    }
+                }
+    
+        .tarjeta{
+            width: 100%;
+            display: flex;
+            padding-bottom: 15px;
+
+                .tarjeta-img{
+                        width: 60px;
+                        height: 60px;
+                }
+                .tarjeta-text{
+                            width: auto;
+                            font-family: $fontsecundaria;
+                            font-size: $fontsize-second;
+                            margin-left: 20px;
+                            color: $fontcolor-secundario;
+                }
+            }
+    }   
+}
+
+@media (max-width:768px) {
+    .banner{
+        .envio{
+            width: 100%;
+            justify-content: start;
+            padding-bottom: 15px;
+                .envio-img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                .envio-text{
+                            width: 50%;
+                            font-family: $fontsecundaria;
+                            font-size: $fontsize-second;
+                            margin-left: 20px;
+                            color: $fontcolor-secundario;
+                    }
+                }
+    
+        .descuento{
+            width: 100%;
+            justify-content: start;
+            padding-bottom: 15px;
+                .descuento-img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                .descuento-text{
+                            width: 50%;
+                            font-family: $fontsecundaria;
+                            font-size: $fontsize-second;
+                            margin-left: 20px;
+                            color: $fontcolor-secundario;
+                    }
+                }
+    
+        .tarjeta{
+            width: 100%;
+            justify-content: start;
+            padding-bottom: 15px;
+                .tarjeta-img{
+                        width: 60px;
+                        height: 60px;
+                }
+                .tarjeta-text{
+                            width: auto;
+                            font-family: $fontsecundaria;
+                            font-size: $fontsize-second;
+                            margin-left: 20px;
+                            color: $fontcolor-secundario;
+                }
+            }
+    }   
+}

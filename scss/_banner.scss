@@ -1,0 +1,17 @@
+.envio{
+        @extend %envio;
+    }
+
+.descuento{
+    @extend %descuento;
+
+    }
+    
+.tarjeta{
+    @extend %tarjeta;
+    }
+
+
+.img-banner{
+    @extend %img-banner;
+}

@@ -1,0 +1,32 @@
+.contenedor1{
+    @extend %ctd-prod;
+}
+
+.contenedor2{
+    @extend %ctd-prod;
+}
+
+.img-productos{
+    @extend %img-prod;
+}
+
+.divboton{
+    width: 150px;
+    margin: auto;
+    transition:box-shadow ease-in-out;
+    border-radius: 3px;
+    padding-bottom: 15px;
+    
+    .boton-prod{
+        width:150px;
+        background-color:transparent;
+        border-color: #e0abc4;
+        color:$fontcolor-primario;
+        border-radius: 3px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{ 
+            background-color:#e0abc4;
+        }
+        }
+    }   
