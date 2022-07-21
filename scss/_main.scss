@@ -1,4 +1,8 @@
 
+.img-logo{
+    width: 100%;
+}
+
 .header__container{
     display: flex;
     flex-direction: row;
@@ -36,25 +40,12 @@ span{
 
 
 
-.contenedor1{
-    @extend %ctd-prod;
-}
-
-.contenedor2{
-    @extend %ctd-prod;
-}
-
-.img-productos{
-    @extend %img-prod;
-}
-
-
 .divboton{
     width: 150px;
     margin: auto;
     transition:box-shadow ease-in-out;
     border-radius: 5px;
-    padding-bottom: 15px;
+    padding: 2%;
     border: none;
     
     .boton-prod{
@@ -152,6 +143,8 @@ span{
         position: relative;
         right: 100%;
         transition: all .3s;
+        text-decoration: none;
+        color: white;
        }
 
        .contenedor-imagen:hover .parrafo{
@@ -177,3 +170,29 @@ span{
         left: 50%;
         transition: all .3s;
        }
+
+
+       .banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 2%;
+        margin: auto;
+            .avisos{
+                width: 30%;
+                display: flex;
+                flex-direction:row;
+                justify-content: center;
+                align-items: center;
+                .avisos-texto{
+                    display: flex;
+                    flex-direction: column;
+                }
+                p{
+                    font-size: 110%;
+                }
+            }
+       }
+

@@ -7,50 +7,21 @@
     font-family: $fontPrincipal;
 }
 
-%encabezados{
-    display: flex;
-    font-family: $fontPrincipal;
-    justify-content: center;
-}
-
-%ctd-prod{
-    width: 100%;
-    font-size: $fontsize-first;
-    font-weight: $fontweight;
-    justify-content: space-evenly;
-    text-align: center;
-    color: $fontcolor-primario;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-%img-prod{
-        
-        border-radius: 1em;
-        border: solid 1px whitesmoke;
-        &:hover{
-            transform:scale(1.1);
-            cursor: pointer;
-            transition: 0.3s;
-        }
-}
-
 
 //Banner
 
-%envio,
-%descuento,
-%tarjeta{
-    width: 33%;
-    display: flex;
-    justify-items: center;
-    padding-bottom: 15px;
-    font-family: $fontsecundaria;
-    padding-top: 20px;
-    font-weight: 400;
-}
+// %banner{
+//     display: flex;
+//     flex-direction: row;
+//     width: 33%;
+//     justify-items: center;
+//     padding-bottom: 15px;
+//     font-family: $fontsecundaria;
+//     padding-top: 20px;
+//     font-weight: 400;
+// }
 
-%img-banner{
-    width: 60px;
-    height: 60px;
-}
+// %img-banner{
+//     width: 60px;
+//     height: 60px;
+// }
