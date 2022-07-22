@@ -6,23 +6,41 @@
     line-height: none;
 }
 
-@mixin medidas($width, $height){
-    width: 100%;
-    height: 100%;
-}
-
-figcaption{
+    figcaption{
     @include texto(20px, $fontPrincipal)
-}
-
-.banner{
+    }
+    .banner{
     @include texto($fontsize-second, $fontsecundaria)
-}
+    }
 
-.contenedor-imagen img{
-    @include medidas(100%, 100%)
+@mixin medidas($width, $height){
+    width: $width;
+    height: $height;
 }
+    .header__container{
+    @include medidas(100%, 50px)
+}
+    .input__busqueda{
+    @include medidas(50%, 40px)
+    }
+    .contenedor-imagen{
+    @include medidas(25%,320px)
+    }
+    .contenedor-imagen img{
+    @include medidas(100%, 100%)
+    }
+    .contenedor-imagen::before{
+    @include medidas(100%, 100%)
+    }
 
-.contenedor-imagen::before{
-    @include medidas(100%, 100%)
-}
+    .texto{
+        @include medidas (100%, 100%)
+    }
+    .contenedor-productos .contenedor-imagen::after{
+        @include medidas(80%,2px)
+    }
+
+
+    .boton-prod{
+        @include medidas(150px,50px)
+    }

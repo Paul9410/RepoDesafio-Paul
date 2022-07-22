@@ -7,10 +7,8 @@
   font-family: "Play"; }
 
 .contenedor-productos .contenedor-imagen {
-  width: 25%;
-  height: 320px;
   margin: 10px;
-  border: 3px solid black;
+  border: 3px solid whitesmoke;
   border-radius: 4px;
   overflow: hidden;
   position: relative; }
@@ -27,6 +25,18 @@ figcaption {
   text-align: center;
   line-height: none; }
 
+.header__container {
+  width: 100%;
+  height: 50px; }
+
+.input__busqueda {
+  width: 50%;
+  height: 40px; }
+
+.contenedor-imagen {
+  width: 25%;
+  height: 320px; }
+
 .contenedor-imagen img {
   width: 100%;
   height: 100%; }
@@ -34,6 +44,18 @@ figcaption {
 .contenedor-imagen::before {
   width: 100%;
   height: 100%; }
+
+.texto {
+  width: 100%;
+  height: 100%; }
+
+.contenedor-productos .contenedor-imagen::after {
+  width: 80%;
+  height: 2px; }
+
+.boton-prod {
+  width: 150px;
+  height: 50px; }
 
 .text-air {
   color: #000; }
@@ -49,6 +71,9 @@ figcaption {
 
 .nav-link {
   color: #686868; }
+
+.img-logo {
+  width: 100%; }
 
 header .botonera {
   font-weight: 800;
@@ -73,23 +98,16 @@ header .botonera {
       transform: scaleX(1);
       transform-origin: bottom left; }
 
-.img-logo {
-  width: 100%; }
-
 .header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   background-color: whitesmoke;
-  width: 100%;
-  height: 50px;
   position: sticky;
   top: 0;
   z-index: 100; }
   .header__container .input__busqueda {
-    width: 50%;
-    height: 40px;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -100,23 +118,6 @@ header .botonera {
     .header__container .carrito:hover {
       font-weight: 600; }
 
-.divboton {
-  width: 150px;
-  margin: auto;
-  transition: box-shadow ease-in-out;
-  border-radius: 5px;
-  padding: 2%;
-  border: none; }
-  .divboton .boton-prod {
-    width: 150px;
-    height: 50px;
-    background-color: #2a2929;
-    border: none;
-    color: white;
-    border-radius: 3px;
-    font-weight: 600;
-    cursor: pointer; }
-
 .contenedor-productos {
   width: 100%;
   display: flex;
@@ -124,6 +125,41 @@ header .botonera {
   justify-content: center; }
   .contenedor-productos .contenedor-imagen img {
     transition: all .3s; }
+    .contenedor-productos .contenedor-imagen img:hover {
+      filter: blur(1.5px);
+      transform: scale(1.5);
+      transition: all .3s; }
+  .contenedor-productos .contenedor-imagen .texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Play"; }
+  .contenedor-productos .contenedor-imagen .titulo {
+    position: relative;
+    left: 100%;
+    transition: all .3s;
+    margin: 10px;
+    padding: 5px; }
+  .contenedor-productos .contenedor-imagen:hover .titulo {
+    left: 0;
+    animation-delay: .3s;
+    transition: all .3s; }
+  .contenedor-productos .contenedor-imagen .parrafo {
+    position: relative;
+    right: 100%;
+    transition: all .3s;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 5px; }
+    .contenedor-productos .contenedor-imagen .parrafo:hover {
+      transform: scale(1.2); }
   .contenedor-productos .contenedor-imagen:hover img {
     filter: blur(1.5px);
     transform: scale(1.5);
@@ -138,62 +174,39 @@ header .botonera {
     background: rgba(0, 0, 0, 0.5);
     transition: all .3s;
     z-index: 10; }
+  .contenedor-productos .contenedor-imagen:hover .parrafo {
+    right: 0;
+    animation-delay: .3s;
+    transition: all .3s; }
+  .contenedor-productos .contenedor-imagen::after {
+    content: "";
+    position: absolute;
+    background: white;
+    left: -100%;
+    top: 20%;
+    z-index: 30;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s; }
+  .contenedor-productos .contenedor-imagen:hover::after {
+    left: 50%;
+    transition: all .3s; }
 
-.texto {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: white;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Play"; }
-
-.titulo, .parrafo {
-  margin: 10px;
-  padding: 5px; }
-
-.titulo {
-  position: relative;
-  left: 100%;
-  transition: all .3s; }
-
-.contenedor-imagen:hover .titulo {
-  left: 0;
-  animation-delay: .3s;
-  transition: all .3s; }
-
-.parrafo {
-  position: relative;
-  right: 100%;
-  transition: all .3s;
-  text-decoration: none;
-  color: white; }
-
-.contenedor-imagen:hover .parrafo {
-  right: 0;
-  animation-delay: .3s;
-  transition: all .3s; }
-
-.contenedor-imagen::after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 2px;
-  background: white;
-  left: -100%;
-  top: 20%;
-  z-index: 30;
-  transform: translateX(-50%) translateY(-50%);
-  transition: all .3s; }
-
-.contenedor-imagen:hover::after {
-  left: 50%;
-  transition: all .3s; }
+.divboton {
+  width: 150px;
+  margin: auto;
+  transition: box-shadow ease-in-out;
+  border-radius: 5px;
+  padding: 2%;
+  border: none; }
+  .divboton .boton-prod {
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer; }
+    .divboton .boton-prod:hover {
+      background-color: black; }
 
 .banner {
   display: flex;
@@ -202,7 +215,8 @@ header .botonera {
   align-items: center;
   flex-wrap: nowrap;
   padding: 2%;
-  margin: auto; }
+  margin: auto;
+  background: whitesmoke; }
   .banner .avisos {
     width: 30%;
     display: flex;

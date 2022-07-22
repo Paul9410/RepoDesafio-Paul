@@ -1,7 +1,4 @@
-
-.img-logo{
-    width: 100%;
-}
+//Input de busqueda
 
 .header__container{
     display: flex;
@@ -9,14 +6,10 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: whitesmoke;
-    width: 100%;
-    height: 50px;
     position: sticky;
     top: 0;
     z-index: 100;
     .input__busqueda{
-        width: 50%;
-        height: 40px;
         border: none;
         border-radius: 10px;
         text-align: center;
@@ -31,28 +24,7 @@
     }
 }
 
-
-
-.divboton{
-    width: 150px;
-    margin: auto;
-    transition:box-shadow ease-in-out;
-    border-radius: 5px;
-    padding: 2%;
-    border: none;
-    
-    .boton-prod{
-        width:150px;
-        height: 50px;
-        background-color:rgb(42, 41, 41);
-        border: none;
-        color:$fontcolor-tres;
-        border-radius: 3px;
-        font-weight: 600;
-        cursor: pointer;
-        }
-    }   
-
+//Contenedor de productos destacados
 
 .contenedor-productos{
     width: 100%;
@@ -61,116 +33,111 @@
     justify-content: center;
     .contenedor-imagen{
         @extend %ctd-img;
-        }
-    .contenedor-imagen img{
-        transition: all .3s;
-        }
-    .contenedor-imagen:hover img{
-        filter: blur(1.5px);
-        transform: scale(1.5);
-        transition: all .3s;
-        }
-    .contenedor-imagen::before{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        transition: all .3s;
-        }
-    .contenedor-imagen:hover::before{
-        background: rgba(0,0,0,.5);
-        transition: all .3s;
-        z-index: 10;
-        }
-}
-
-
-       .texto{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        color: white;
-        z-index: 20;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-family: $fontPrincipal;
-       }
-
-       .titulo, .parrafo{
-        margin: 10px;
-        padding: 5px;
-       }
-
-       .titulo{
-        position: relative;
-        left: 100%;
-        transition: all .3s;
-       }
-
-       .contenedor-imagen:hover .titulo{
-        left: 0;
-        animation-delay: .3s;
-        transition: all .3s;
-       }
-
-       .parrafo{
-        position: relative;
-        right: 100%;
-        transition: all .3s;
-        text-decoration: none;
-        color: white;
-       }
-
-       .contenedor-imagen:hover .parrafo{
-        right: 0;
-        animation-delay: .3s;
-        transition: all .3s;
-       }
-
-       .contenedor-imagen::after{
-        content: "";
-        position: absolute;
-        width: 80%;
-        height: 2px;
-        background: white;
-        left: -100%;
-        top: 20%;
-        z-index: 30;
-        transform: translateX(-50%) translateY(-50%);
-        transition: all .3s;
-       }
-
-       .contenedor-imagen:hover::after{
-        left: 50%;
-        transition: all .3s;
-       }
-
-
-       .banner{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        padding: 2%;
-        margin: auto;
-            .avisos{
-                width: 30%;
-                display: flex;
-                flex-direction:row;
-                justify-content: center;
-                align-items: center;
-                .avisos-texto{
-                    display: flex;
-                    flex-direction: column;
-                }
-                p{
-                    font-size: 110%;
+        img{
+            transition: all .3s;
+            &:hover{
+                filter: blur(1.5px);
+                transform: scale(1.5);
+                transition: all .3s;
                 }
             }
-       }
+        .texto{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $fontcolor-tres;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: $fontPrincipal;
+            }
+    
+            .titulo{
+            position: relative;
+            left: 100%;
+            transition: all .3s;
+            margin: 10px;
+            padding: 5px;
+            }
+            &:hover .titulo{
+                left: 0;
+                animation-delay: .3s;
+                transition: all .3s;
+                }
+            
+            .parrafo{
+            position: relative;
+            right: 100%;
+            transition: all .3s;
+            text-decoration: none;
+            color: $fontcolor-tres;
+            margin: 10px;
+            padding: 5px;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            &:hover img{
+                filter: blur(1.5px);
+                transform: scale(1.5);
+                transition: all .3s;
+                }
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                transition: all .3s;
+                }
+                &:hover::before{
+                    background: rgba(0,0,0,.5);
+                    transition: all .3s;
+                    z-index: 10;
+                    }
+            &:hover .parrafo{
+                right: 0;
+                animation-delay: .3s;
+                transition: all .3s;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background: white;
+                left: -100%;
+                top: 20%;
+                z-index: 30;
+                transform: translateX(-50%) translateY(-50%);
+                transition: all .3s;
+               }
+               &:hover::after{
+                left: 50%;
+                transition: all .3s;
+               }
+    }
+}
 
+       .divboton{
+        width: 150px;
+        margin: auto;
+        transition:box-shadow ease-in-out;
+        border-radius: 5px;
+        padding: 2%;
+        border: none;
+        
+        .boton-prod{
+            background-color:rgb(46, 46, 46);
+            border: none;
+            color:$fontcolor-tres;
+            border-radius: 3px;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover{
+                background-color: black;
+            }
+            }
+        }   
+    
+
+       
