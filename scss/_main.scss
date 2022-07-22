@@ -14,27 +14,20 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    
-}
-
-.input__busqueda{
-    width: 50%;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    font-family: $fontPrincipal;
-}    
-
-span{
-    margin-left: 30px;
-}
-
-.carrito{
-    border: none;
-    font-family: $fontPrincipal;
-    &:hover{
-        font-weight: 600;
+    .input__busqueda{
+        width: 50%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-family: $fontPrincipal;
+    }
+    .carrito{
+        border: none;
+        font-family: $fontPrincipal;
+        &:hover{
+            font-weight: 600;
+        }
     }
 }
 
@@ -66,46 +59,31 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
     .contenedor-imagen{
-        width: 25%;
-        height: 320px;
-        margin: 10px;
-        border: 3px solid black;
-        border-radius: 4px;
-        overflow: hidden;
-        position: relative;
-    }
-
-        .contenedor-imagen img{
-            width: 100%;
-            height: 100%;
-            transition: all .3s;
-            
+        @extend %ctd-img;
         }
-
-       .contenedor-imagen:hover img{
+    .contenedor-imagen img{
+        transition: all .3s;
+        }
+    .contenedor-imagen:hover img{
         filter: blur(1.5px);
         transform: scale(1.5);
         transition: all .3s;
-       }
-
-       .contenedor-imagen::before{
+        }
+    .contenedor-imagen::before{
         position: absolute;
         content: "";
-        width: 100%;
-        height: 100%;
         top: 0;
         left: 0;
         transition: all .3s;
-       }
-
-       .contenedor-imagen:hover::before{
+        }
+    .contenedor-imagen:hover::before{
         background: rgba(0,0,0,.5);
         transition: all .3s;
         z-index: 10;
-       }
+        }
+}
+
 
        .texto{
         position: absolute;

@@ -6,6 +6,15 @@
   justify-content: center;
   font-family: "Play"; }
 
+.contenedor-productos .contenedor-imagen {
+  width: 25%;
+  height: 320px;
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative; }
+
 figcaption {
   font-size: 20px;
   font-family: "Play";
@@ -17,6 +26,14 @@ figcaption {
   font-family: "roboto";
   text-align: center;
   line-height: none; }
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 100%; }
+
+.contenedor-imagen::before {
+  width: 100%;
+  height: 100%; }
 
 .text-air {
   color: #000; }
@@ -70,23 +87,18 @@ header .botonera {
   position: sticky;
   top: 0;
   z-index: 100; }
-
-.input__busqueda {
-  width: 50%;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-  font-family: "Play"; }
-
-span {
-  margin-left: 30px; }
-
-.carrito {
-  border: none;
-  font-family: "Play"; }
-  .carrito:hover {
-    font-weight: 600; }
+  .header__container .input__busqueda {
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Play"; }
+  .header__container .carrito {
+    border: none;
+    font-family: "Play"; }
+    .header__container .carrito:hover {
+      font-weight: 600; }
 
 .divboton {
   width: 150px;
@@ -110,39 +122,22 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-
-.contenedor-imagen {
-  width: 25%;
-  height: 320px;
-  margin: 10px;
-  border: 3px solid black;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative; }
-
-.contenedor-imagen img {
-  width: 100%;
-  height: 100%;
-  transition: all .3s; }
-
-.contenedor-imagen:hover img {
-  filter: blur(1.5px);
-  transform: scale(1.5);
-  transition: all .3s; }
-
-.contenedor-imagen::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transition: all .3s; }
-
-.contenedor-imagen:hover::before {
-  background: rgba(0, 0, 0, 0.5);
-  transition: all .3s;
-  z-index: 10; }
+  .contenedor-productos .contenedor-imagen img {
+    transition: all .3s; }
+  .contenedor-productos .contenedor-imagen:hover img {
+    filter: blur(1.5px);
+    transform: scale(1.5);
+    transition: all .3s; }
+  .contenedor-productos .contenedor-imagen::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transition: all .3s; }
+  .contenedor-productos .contenedor-imagen:hover::before {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+    z-index: 10; }
 
 .texto {
   position: absolute;
