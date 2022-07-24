@@ -1,16 +1,18 @@
 @media (max-width:991px) {
 
 .contenedor-imagen{
-    width: 45%;
+    width: 35%;
 }
 
 
 .banner{
     display: flex;
     flex-direction: column;
+    width: 70%;
    
     .avisos{
         width: 100%;
+        gap: 10px;
     }
 }
 }

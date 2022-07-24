@@ -6,9 +6,6 @@
     line-height: none;
 }
 
-    figcaption{
-    @include texto(20px, $fontPrincipal)
-    }
     .banner{
     @include texto($fontsize-second, $fontsecundaria)
     }
@@ -43,4 +40,8 @@
 
     .boton-prod{
         @include medidas(150px,50px)
+    }
+
+    .avisos{
+        @include medidas (30%, 130px)
     }

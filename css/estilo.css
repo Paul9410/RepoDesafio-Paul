@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
-.text-air, .ProductosDestacados, .encabezados {
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+.text-air {
+  font-family: "Megrim";
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.ProductosDestacados {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,12 +19,6 @@
   border-radius: 4px;
   overflow: hidden;
   position: relative; }
-
-figcaption {
-  font-size: 20px;
-  font-family: "Play";
-  text-align: center;
-  line-height: none; }
 
 .banner {
   font-size: 0.9em;
@@ -57,6 +58,10 @@ figcaption {
   width: 150px;
   height: 50px; }
 
+.avisos {
+  width: 30%;
+  height: 130px; }
+
 .text-air {
   color: #000; }
 
@@ -71,6 +76,23 @@ figcaption {
 
 .nav-link {
   color: #686868; }
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #container .texto {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Play";
+    font-size: 35px;
+    font-weight: 600; }
+  #container .inicio {
+    width: 100px; }
 
 .img-logo {
   width: 100%; }
@@ -87,7 +109,7 @@ header .botonera {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: 3px;
       bottom: 0;
       left: 0;
       background-color: rgba(10, 10, 10, 0.852);
@@ -108,15 +130,28 @@ header .botonera {
   top: 0;
   z-index: 100; }
   .header__container .input__busqueda {
+    width: 100%;
     border: none;
     border-radius: 10px;
     text-align: center;
-    font-family: "Play"; }
-  .header__container .carrito {
+    font-family: "Play";
+    background: #fff url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px; }
+  .header__container .buscar {
+    height: 100%;
     border: none;
-    font-family: "Play"; }
-    .header__container .carrito:hover {
-      font-weight: 600; }
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: whitesmoke;
+    margin-left: 5px;
+    cursor: pointer; }
+    .header__container .buscar:hover {
+      background-color: black; }
+
+.carrito {
+  border: none;
+  font-family: "Play"; }
+  .carrito:hover {
+    font-weight: 600; }
 
 .contenedor-productos {
   width: 100%;
@@ -215,53 +250,77 @@ header .botonera {
   align-items: center;
   flex-wrap: nowrap;
   padding: 2%;
-  margin: auto;
-  background: whitesmoke; }
+  margin: auto; }
   .banner .avisos {
-    width: 30%;
+    background-color: lightgray;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center; }
     .banner .avisos .avisos-texto {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      text-align: start;
+      font-family: "Play"; }
+      .banner .avisos .avisos-texto h5 {
+        font-weight: 600; }
     .banner .avisos p {
+      width: 90%;
       font-size: 110%; }
 
-.footer img {
-  width: 27px;
-  height: 30px; }
-
-.footer section li {
-  color: white;
-  font-family: "Play";
-  list-style: none;
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: 400; }
-
-.footer section a {
-  color: white;
-  text-decoration: none; }
+footer {
+  background-color: #1c1a1a;
+  display: flex; }
+  footer #pie {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer #pie h4 {
+      color: whitesmoke;
+      font-family: "Play";
+      padding-bottom: 10px; }
+    footer #pie .footer {
+      display: flex; }
+      footer #pie .footer .img-pie {
+        margin: 10px;
+        filter: grayscale(100%);
+        transition: all .3s; }
+        footer #pie .footer .img-pie:hover {
+          filter: none;
+          transform: scale(1.3);
+          transition: all .3s; }
+    footer #pie h6 {
+      padding-top: 30px; }
+      footer #pie h6 a {
+        color: whitesmoke;
+        font-family: "roboto";
+        font-weight: 200;
+        text-decoration: none; }
 
 .text-air {
-  background: linear-gradient(to top, #e2d3da, #f2d0e0);
-  height: 100px;
-  font-size: 30px; }
+  background-color: whitesmoke;
+  height: 100px; }
+  .text-air h1 {
+    font-size: 45px;
+    font-weight: 700; }
 
 .ProductosDestacados {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 600; }
 
 @media (max-width: 991px) {
   .contenedor-imagen {
-    width: 45%; }
+    width: 35%; }
   .banner {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 70%; }
     .banner .avisos {
-      width: 100%; } }
+      width: 100%;
+      gap: 10px; } }
 
 @media (max-width: 768px) {
   .contenedor-imagen {

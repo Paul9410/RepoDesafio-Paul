@@ -63,9 +63,12 @@
     </header>
 
     <section class="header__container">
+      <div class="w-50 d-flex">
       <input type="text" placeholder="Buscá el producto que necesites..." class="input__busqueda">
+      <a href="paginas/error404.html"><button class="buscar">Buscar</button></a>
+    </div>
       <div>
-      <img src="imagenes/compra.svg" alt="Carrito"> <a href="paginas/Productos.html"><button class="carrito">Ver mis compras</button></a>
+      <img src="imagenes/compra.svg" alt="Carrito"> <a href="paginas/error404.html"><button class="carrito">Ver mis compras</button></a>
       </div>
     </section>
 
@@ -95,9 +98,9 @@
     </button>
   </div>
 
-  <section class="my-5 w-100">
+  <section class="my-5">
     <div class="text-air">
-        <p>#Airbeauty</p>
+        <h1>Sensorial Experience</h1>
     </div>
   </section>
 
@@ -105,8 +108,7 @@
 <main>
 
     <div>
-        <h1 class="encabezados">Las mejores velas artesanales</h1>
-          <p class="ProductosDestacados container-fluid"> Productos destacados en Design At home 2022</p>
+        <h2 class="ProductosDestacados my-5">Las mejores velas artesanales</h2>
     </div>
 
 <div class="contenedor-productos">
@@ -163,91 +165,47 @@
 
 <section class="banner">
   <div class="avisos">
-    <img src="imagenes/envio.svg" alt="Icono de envio">
-    <div class="avisos-texto">
-    <h3>Entrega en todo CABA</h3>
-    <p>Entrega gratis para compras superiores a $5.000.</p>
-  </div>
-  </div>
-  <div class="avisos">
-    <img src="imagenes/descuento.svg" alt="Icono de descuento">
-    <div class="avisos-texto">
-    <h3>15% De descuento los fines de semana</h3>
-    <p>Tenes hasta 3 cuotas sin interes con todas las tarjetas de crédito.</p>
-  </div>
+    <img src="imagenes/envio.svg" alt="Icono de envio" width="80px">
+      <div class="avisos-texto">
+      <h5>Entrega en todo CABA</h5>
+      <p>Entrega gratis para compras superiores a $7.000 (Solo en CABA).</p>
+      </div>
   </div>
   <div class="avisos">
-    <img src="imagenes/tarjeta.svg" alt="Icono de tarjetas">
+    <img src="imagenes/descuento.svg" alt="Icono de descuento" width="80px">
+      <div class="avisos-texto">
+      <h5>15% De descuento</h5>
+      <p>Disfrutá nuestras promociones los viernes de silueta.</p>
+      </div>
+  </div>
+  <div class="avisos">
+    <img src="imagenes/tarjeta.svg" alt="Icono de tarjetas" width="80px">
     <div class="avisos-texto">
-    <h3>3 y 6 cuotas sin interes</h3>
-    <p>Disfrutalo con todas las tarjetas de crédito.</p>
+    <h5>3 y 6 cuotas sin interes</h5>
+    <p>Obtenelo con tarjetas VISA y mastercard.</p>
   </div>
   </div>
 </section>
 
     <!-------------------------------FOOTER-------------------------------------->
-
-    <footer class="text-white py-4 bg-dark footer">
-            <div class="row container-fluid w-100 justify-content-center">
-
-                <section class="col-sm-12 col-md-6 col-lg-4">
-                <ul>
-                    <li>
-                        <img src="imagenes/mail.svg" alt="mail"> designathome@outlook.com
-                    </li>
-                    <li>
-                        <img src="imagenes/direccion.svg" alt="direccion"> Av. Rivadavia 4434 Almagro, CABA.
-                    </li>
-                    <li>
-                        <img src="imagenes/telefono.svg" alt="teléfono"> Telf: 11 3333 4444
-                    </li>
-                    <li>
-                    <img src="imagenes/horario.svg" alt="horario"> Lun - Vier 10/20hs - Sab 10/15hs
-                    </li>
-                </ul>
-            </section>
-                
-                <section class="col-sm-12 col-md-6 col-lg-4">
-                <ul> 
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                        <img src="imagenes/ig.svg" alt="Logo de instagram">
-                        @designathome.aromas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                        <img src="imagenes/fb.svg" alt="Logo de facebook">
-                        designathome.aromas
-                    </li>
-                    </a>
-                    <li>
-                        <a href="https://www.whatsapp.com" target="_blank">
-                        <img src="imagenes/whatsapp.svg" alt="Logo de whatsapp">
-                        11 2736 4483
-                    </li>
-                    </a>
-                    </a>
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank">
-                        <img src="imagenes/youtube.svg" alt="Logo de youtube">
-                        design at home
-                    </li>
-                    </a>
-                </ul>
-            </section>
-
-            <section class="col-sm-12 col-md-12 col-lg-4">
-                <ul>
-                    <li><a href="paginas/Contacto.html">Contacto</a></li>
-                    <li><a href="paginas/preguntas.html">Venta mayorista</a></li>
-                    <li><a href="paginas/preguntas.html">Regalos corporativos</a></li>
-                    <li><a href="paginas/preguntas.html">Términos y condiciones</a></li>
-                    <li><a href="paginas/preguntas.html">Políticas de privacidad</a></li>
-                </ul>
-            </section>
-        </div>
-    </footer>
+<footer>
+  <div id="pie">
+    <h4>Redes sociales</h4>
+    <div class="footer">
+      <a href="https://www.instagram.com/desingathome.aromas/" target="_blank">
+      <img src="imagenes/ig.svg" alt="Instagram" width="30px" class="img-pie" ></a>
+      <a href="https://www.facebook.com/desingathome.aromas" target="_blank">
+      <img src="imagenes/fb.svg" alt="Facebook" width="30px" class="img-pie"></a>
+      <a href="https://www.Twitter.com" target="_blank">
+      <img src="imagenes/tw.svg" alt="Twitter" width="30px" class="img-pie"></a>
+      <a href="https://www.whatsapp.com" target="_blank">
+        <img src="imagenes/whatsapp.svg" alt="Whatsapp" width="30px" class="img-pie"></a>
+    </div>
+    <h6>
+      <a href="https://outlook.live.com" target="_blank">desingathome@outlook.com</a>
+  </h6>
+  </div>
+</footer>
 
 <script src="js/wow.min.js"></script>
 <script>
