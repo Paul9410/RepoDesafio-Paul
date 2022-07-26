@@ -257,11 +257,14 @@ header .botonera {
     display: flex;
     flex-direction: row;
     align-items: center; }
+    .banner .avisos img {
+      margin-left: 10px; }
     .banner .avisos .avisos-texto {
       display: flex;
       flex-direction: column;
       text-align: start;
-      font-family: "Play"; }
+      font-family: "Play";
+      margin-left: 5px; }
       .banner .avisos .avisos-texto h5 {
         font-weight: 600; }
     .banner .avisos p {
