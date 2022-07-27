@@ -1,0 +1,33 @@
+h1{
+    font-family: "play";
+}
+.box__texto{
+    line-height: 1.0em;
+    padding-top: 40px;
+    .box__texto--parrafo{
+        justify-content: center;
+        line-height: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family:"play";
+        font-size: 1.1em;
+    }
+    .gracias{
+        font-size: 1.5em;
+        font-family: "play";
+        margin-top: 5px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+}
+
+.soy{
+    text-align: center;
+    padding-top: 40px;
+    img{
+        width: 80%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }    
+}
