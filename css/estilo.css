@@ -342,7 +342,7 @@ button {
     transition: .3s; }
 
 h1 {
-  font-family: "play"; }
+  font-family: "Play"; }
 
 .box__texto {
   line-height: 1.0em;
@@ -352,11 +352,11 @@ h1 {
     line-height: 22px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "play";
+    font-family: "Play";
     font-size: 1.1em; }
   .box__texto .gracias {
     font-size: 1.5em;
-    font-family: "play";
+    font-family: "Play";
     margin-top: 5px;
     margin-bottom: 50px;
     text-align: center; }
@@ -368,6 +368,60 @@ h1 {
     width: 80%;
     border-radius: 10px;
     margin-bottom: 20px; }
+
+.img-contacto {
+  width: 100%;
+  height: 250px;
+  box-sizing: border-box; }
+  .img-contacto img {
+    width: 100%;
+    height: 100%; }
+
+.contact-form {
+  font-family: 'Play', sans-serif;
+  margin-bottom: 8px;
+  color: #4d4d4d; }
+  .contact-form label {
+    margin-left: 10px; }
+  .contact-form .input-1 {
+    width: 80%;
+    line-height: 1em;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid;
+    font-family: 'Play', sans-serif;
+    font-weight: 500;
+    color: black; }
+  .contact-form .input-2 {
+    height: 30px;
+    background-color: #1c1a1a;
+    color: whitesmoke;
+    border: none; }
+
+.contacto {
+  font-family: "Play";
+  font-size: 1.1em;
+  padding-top: 10px; }
+  .contacto ul {
+    list-style: none; }
+    .contacto ul li {
+      text-decoration: none;
+      color: #4d4d4d;
+      padding: 10px; }
+      .contacto ul li span {
+        color: black;
+        font-weight: 700; }
+    .contacto ul a {
+      text-decoration: none;
+      color: #4d4d4d; }
+      .contacto ul a span {
+        color: black;
+        font-weight: 700; }
+
+.map {
+  border: solid;
+  border-width: 1px;
+  border-color: #c4c7c1; }
 
 @media (max-width: 991px) {
   .contenedor-imagen {
