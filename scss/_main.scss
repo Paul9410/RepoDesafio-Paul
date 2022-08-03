@@ -43,7 +43,7 @@
     flex-wrap: wrap;
     justify-content: center;
     .contenedor-imagen{
-        width: 30%;
+        width: 320px;
         @extend %ctd-img;
         img{
             transition: all .3s;

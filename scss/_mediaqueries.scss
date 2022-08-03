@@ -1,33 +1,33 @@
-@media (max-width:1200px){
-    .contenedor-productos{
-    width: 100%;
-}
-}
-
-@media (max-width:991px){
+@media(max-width:340px){
+    .selector{
+        width: 60%;
+    }
+    
     .contenedor-imagen{
-        display: flex;
-        width: 45%;
+        width: 100%;
+        height: auto;
+    }
+
+    .productos {
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }   
 }
+
+@media(max-width:426px){
+    .ProductosDestacados,
+    .text-air{
+        text-align: center;
+    }
 }
 
-
-@media (max-width:768px) {
-
-    .contenedor-imagen{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-}
-
+@media(max-width:680px){
     .carrito{
         display: none;
     }
-} 
+}
 
-
-    @media (max-width:572px) {
-        .contenedor-imagen{
-            width: 60%;
-        }
-    }
