@@ -20,10 +20,6 @@ $colores:(
     color: map-get($map: $colores, $key:"cuatro");
 }
 
-.banner{
-    color: map-get($map: $colores, $key:"dos");
-}
-
 .nav-link{
     color: map-get($map: $colores, $key: "dos");
 }

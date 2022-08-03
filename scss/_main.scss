@@ -11,11 +11,11 @@
     z-index: 100;
     .input__busqueda{
         width: 100%;
-        border: none;
+        border: solid 1px;
         border-radius: 10px;
         text-align: center;
         font-family: $fontPrincipal;
-        background: #fff url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px;  
+      
         }
     .buscar{
         height: 100%;
@@ -33,9 +33,6 @@
     .carrito{
         border: none;
         font-family: $fontPrincipal;
-        &:hover{
-            font-weight: 600;
-        }
     }
 
 //Contenedor de productos destacados
@@ -46,6 +43,7 @@
     flex-wrap: wrap;
     justify-content: center;
     .contenedor-imagen{
+        width: 30%;
         @extend %ctd-img;
         img{
             transition: all .3s;

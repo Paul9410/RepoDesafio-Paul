@@ -2,15 +2,19 @@
     @extend %text-air;
     background-color: whitesmoke;
     height: 100px;
-    h1{
     font-size: 45px;
     font-weight: 700;
-}
+    h2{
+        font-family: $fonttres;
+        font-weight: 800;
+    }
 }
 
+
 .ProductosDestacados{
-    @extend %text-main;
-    font-size: 40px;
+    @extend %text-air;
+    font-size: 2em;
     font-weight: 600;
+    font-family: $fontPrincipal;
 }
 

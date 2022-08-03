@@ -6,10 +6,6 @@
     line-height: none;
 }
 
-    .banner{
-    @include texto($fontsize-second, $fontsecundaria)
-    }
-
 @mixin medidas($width, $height){
     width: $width;
     height: $height;
@@ -42,6 +38,3 @@
         @include medidas(150px,50px)
     }
 
-    .avisos{
-        @include medidas (30%, 130px)
-    }

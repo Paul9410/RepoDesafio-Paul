@@ -1,0 +1,25 @@
+#productos,
+#envio{
+    font-family: "play";
+    h3{
+        text-decoration:underline;
+        padding-bottom: 30px;
+    }
+    .container{
+        box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
+        padding: 30px;
+    }
+    .preguntas{
+        padding: 10px;
+        font-weight: 700;
+        position: relative;
+        display: flex;
+        cursor: pointer;
+    }
+    .respuestas{
+        margin-bottom: 20px;
+        li{
+            list-style-type: none;
+        }
+    }
+}
