@@ -14,17 +14,4 @@
             font-size: 13px;
         }
     }
-    button{
-        height: 40px;
-        background-color:rgb(46, 46, 46);
-        color: whitesmoke;
-        border: none;
-        border-radius: 3px;
-        transition: .3s;
-        cursor: pointer;
-        &:hover{
-            transform: scale(1.08);
-            transition: .3s;
-    }
-    
-}
+   

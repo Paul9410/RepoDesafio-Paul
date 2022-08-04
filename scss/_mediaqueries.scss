@@ -26,8 +26,21 @@
 }
 
 @media(max-width:680px){
-    .carrito{
+    .button{
         display: none;
+    }
+    .img-carrito{
+        display: flex;
     }
 }
 
+@media(max-width:736px){
+    #container{
+        img{
+            width: 100%;
+        }
+    .texto{
+        text-align: center;
+    }
+}
+}

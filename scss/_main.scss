@@ -1,3 +1,12 @@
+//Imagen general de fondo
+
+body{
+    background-image: url(../imagenes/general.jpg);
+    background-repeat:repeat;
+    background-attachment: fixed;
+    font-family: 'Play', sans-serif; 
+}    
+
 //Input de busqueda
 
 .header__container{
@@ -30,10 +39,28 @@
         }
     }
     }
-    .carrito{
-        border: none;
-        font-family: $fontPrincipal;
+
+//Boton de mis compras
+
+    .img-carrito{
+        display: none;
     }
+
+    .button{
+        font-family: $fontPrincipal;
+        height: 40px;
+        background-color:rgb(46, 46, 46);
+        color: whitesmoke;
+        border: none;
+        border-radius: 3px;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.08);
+            transition: .3s;
+    }
+    
+}
 
 //Contenedor de productos destacados
 
@@ -152,8 +179,7 @@
             }
             }
         }   
-    
-      
+         
             
             
 

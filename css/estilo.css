@@ -100,6 +100,12 @@ header .botonera {
       transform: scaleX(1);
       transform-origin: bottom left; }
 
+body {
+  background-image: url(../imagenes/general.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: 'Play', sans-serif; }
+
 .header__container {
   display: flex;
   flex-direction: row;
@@ -126,9 +132,21 @@ header .botonera {
     .header__container .buscar:hover {
       background-color: black; }
 
-.carrito {
+.img-carrito {
+  display: none; }
+
+.button {
+  font-family: "Play";
+  height: 40px;
+  background-color: #2e2e2e;
+  color: whitesmoke;
   border: none;
-  font-family: "Play"; }
+  border-radius: 3px;
+  transition: .3s;
+  cursor: pointer; }
+  .button:hover {
+    transform: scale(1.08);
+    transition: .3s; }
 
 .contenedor-productos {
   width: 100%;
@@ -283,18 +301,6 @@ figcaption {
   figcaption .iva {
     font-size: 13px; }
 
-button {
-  height: 40px;
-  background-color: #2e2e2e;
-  color: whitesmoke;
-  border: none;
-  border-radius: 3px;
-  transition: .3s;
-  cursor: pointer; }
-  button:hover {
-    transform: scale(1.08);
-    transition: .3s; }
-
 h1 {
   font-family: "Play"; }
 
@@ -325,11 +331,9 @@ h1 {
 
 .img-contacto {
   width: 100%;
-  height: 400px;
   padding-bottom: 30px; }
   .img-contacto img {
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
 
 .contact-form {
   font-family: 'Play', sans-serif;
@@ -346,6 +350,8 @@ h1 {
     font-family: 'Play', sans-serif;
     font-weight: 500;
     color: black; }
+  .contact-form .area-text {
+    width: 90%; }
   .contact-form .input-2 {
     height: 30px;
     background-color: #1c1a1a;
@@ -353,6 +359,7 @@ h1 {
     border: none; }
 
 .contacto {
+  width: 100%;
   font-family: "Play";
   font-size: 1.1em;
   padding-top: 10px; }
@@ -380,10 +387,14 @@ h1 {
 #productos,
 #envio {
   font-family: "play"; }
+  #productos h1,
+  #envio h1 {
+    text-align: center; }
   #productos h3,
   #envio h3 {
     text-decoration: underline;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    text-align: center; }
   #productos .container,
   #envio .container {
     box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
@@ -421,5 +432,13 @@ h1 {
     text-align: center; } }
 
 @media (max-width: 680px) {
-  .carrito {
-    display: none; } }
+  .button {
+    display: none; }
+  .img-carrito {
+    display: flex; } }
+
+@media (max-width: 736px) {
+  #container img {
+    width: 100%; }
+  #container .texto {
+    text-align: center; } }
