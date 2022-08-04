@@ -27,14 +27,14 @@
     }
 
     .texto{
-        @include medidas (100%, 100%)
+    @include medidas (100%, 100%)
     }
     .contenedor-productos .contenedor-imagen::after{
-        @include medidas(80%,2px)
+    @include medidas(80%,2px)
     }
 
 
     .boton-prod{
-        @include medidas(150px,50px)
+    @include medidas(150px,50px)
     }
 
